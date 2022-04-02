@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import environ
-import os
 
 env = environ.Env()
 
@@ -42,6 +41,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # My apps.
+    'learning_logs',
+
+    # Default django apps.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
