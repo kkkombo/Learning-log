@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Boilerplate</title>
+        <meta name="author" value="Alexandra Dedok" />
+        <meta name="description" value="Python Learning Log App with Django" />
+        <meta name="keywords" content="Python, Django" />
+    </head>
+    <body>
+        <p><a href="{% url 'learning_logs:index' %}">Learning Log</a></p>
+        {% block content %}{% endblock content %}
+    </body>
+</html>
